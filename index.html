@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forever & Always ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<script src="script.js"></script>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <div id="music-control">
+    <button id="play-pause-btn">🎵</button>
+    <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+  </div>
+  <audio id="bg-music" loop>
+    <source src="https://raw.githubusercontent.com/athushrajeev2708/surprise/main/surprise%20bgm.mp3" type="audio/mp3">
+  </audio>
+
+  <div id="intro-screen" class="screen">
+    <div class="kiss-emoji">😘</div>
+    <h1>...Future Wifeyyy...</h1>
+    <button class="btn" id="start-btn">Begin 😌</button>
+  </div>
+
+  <div id="love-meter-screen" class="screen hidden">
+    <h2>Tap anywhere....!</h2>
+    <div class="heart-meter" id="heart-beat">❤️</div>
+    <div class="progress-bar-container">
+      <div class="progress-bar" id="love-bar"></div>
+    </div>
+    <p style="margin-top: 15px;" id="love-percentage">0%</p>
+  </div>
+
+  <div id="balloon-screen" class="screen hidden">
+    <div class="counter" id="balloon-counter">Memories Unlocked: 0 / 10</div>
+    </div>
+
+  <div class="modal" id="balloon-modal">
+    <div class="modal-content">
+      <img id="modal-img" src="" alt="Memory">
+      <p id="modal-msg"></p>
+      <button class="btn" id="modal-close-btn">Close ❤️</button>
+    </div>
+  </div>
+
+  <div id="letter-screen" class="screen hidden">
+    <div class="envelope" id="envelope">
+      <div class="envelope-flap"></div>
+      <div class="letter-paper">
+        <p id="typewriter-text"></p>
+      </div>
+    </div>
+    <button class="btn" id="grand-ending-btn">One Last Surprise!! 🎁</button>
+  </div>
+
+  <div id="ending-screen" class="screen hidden">
+    <canvas id="final-canvas"></canvas>
+    <div class="final-heart-container">
+      <img src="https://raw.githubusercontent.com/athushrajeev2708/surprise/main/10.jpeg" alt="Us" class="final-photo" id="final-photo">
+    </div>
+    <h1 class="glowing-text" id="final-text">Forever & Always 🫂</h1>
+  </div>
+
+  <button id="secret-btn" class="hidden">Touch My Heart 🫀</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
